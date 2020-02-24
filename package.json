@@ -1,0 +1,16 @@
+{
+  "name": "cgpacalculator",
+  "version": "1.0.0",
+  "description": "Making CGPA Calculator",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Afolabi MArvelousarvelous Sunday",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1",
+    "@popperjs/core": "^2.0.6",
+    "express": "^4.17.1"
+  }
+}

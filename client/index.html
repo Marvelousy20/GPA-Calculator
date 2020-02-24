@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA calculator</title>
+    <link rel="stylesheet" href="css/styles2.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.4.1.js" defer></script>
+    <script src="js/bootstrap.js" defer></script>
+    <script src="js/scripts.js" defer></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+              
+            </div>
+            <div class="col-sm-4 all no-padding view">
+                <section class="main-header"> <!--head Section-->
+                    <h3 class="head">
+                        CGPA Calculator
+                    </h3>
+                    <span>
+                        <select name="" id="reduce-size">
+                            <option value="" selected disabled>choose scale</option>
+                            <option value="5" id="scale5">5.0</option>
+                            <option value="4" id="scale4">4.0</option>
+                        </select>
+                    </span>
+                </section>
+                <hr class="line">
+
+                <div class="flex">
+                    <div class="container headers">
+                        <h3>Course</h3>
+                        <input type="text"  class="form-control inputs">
+                        <input type="text"  class="form-control inputs">
+                        <input type="text"  class="form-control inputs">
+                        <input type="text"  class="form-control inputs">
+                        <input type="text"  class="form-control inputs">
+                        <input type="text"  class="form-control inputs">
+                        <input type="text"  class="form-control inputs">
+                        <input type="text"  class="form-control inputs">
+                        <input type="text"  class="form-control inputs add">
+                        <input type="text"  class="form-control inputs add">
+                    </div>
+                    <br>
+                    <div class="container headers">
+                        <h3>Unit</h3>
+                        <input type="number"  class="form-control" id="units"  placeholder="5,4,3...">
+                        <input type="number"  class="form-control" id="units2" placeholder="5,4,3...">
+                        <input type="number"  class="form-control" id="units3" placeholder="5,4,3...">
+                        <input type="number"  class="form-control" id="units4" placeholder="5,4,3...">
+                        <input type="number"  class="form-control" id="units5" placeholder="5,4,3..."> 
+                        <input type="number"  class="form-control" id="units6" placeholder="5,4,3...">
+                        <input type="number"  class="form-control" id="units7" placeholder="5,4,3...">
+                        <input type="number"  class="form-control" id="units8" placeholder="5,4,3...">
+                        <input type="number"  class="form-control add" id="unit9"  placeholder="5,4,3...">
+                        <input type="number"  class="form-control add" id="unit10" placeholder="5,4,3...">
+                    </div>
+
+                    <div class="container headers">
+                        <h3>Grade</h3>
+                        <select name="" class="select" id="select1">
+                            <option value="5">A</option> 
+                            <option value="4">B</option>
+                            <option value="3">C</option>
+                            <option value="2">D</option>
+                            <option value="1">E</option>
+                            <option value="0">F</option>
+                        </select> <br>
+             
+                        <select name="" class="select" id="select2">
+                         <option value="5">A</option>
+                         <option value="4">B</option>
+                         <option value="3">C</option>
+                         <option value="2">D</option>
+                         <option value="1">E</option>
+                         <option value="0">F</option>
+                     </select> <br>
+             
+                     <select name="" class="select" id="select3">
+                         <option value="5">A</option>
+                         <option value="4">B</option>
+                         <option value="3">C</option>
+                         <option value="2">D</option>
+                         <option value="1">E</option>
+                         <option value="0">F</option>
+                     </select> <br>
+             
+                     <select name="" class="select" id="select4">
+                         <option value="5">A</option>
+                         <option value="4">B</option>
+                         <option value="3">C</option>
+                         <option value="2">D</option>
+                         <option value="1">E</option>
+                         <option value="0">F</option>
+                     </select> <br>
+             
+                     <select name="" class="select" id="select5">
+                         <option value="5">A</option>
+                         <option value="4">B</option>
+                         <option value="3">C</option>
+                         <option value=2>D</option>
+                         <option value="1">E</option>
+                         <option value="0">F</option>
+                     </select> <br>
+             
+                     <select name="" class="select" id="select6">
+                         <option value="5">A</option>
+                         <option value="4">B</option>
+                         <option value="3">C</option>
+                         <option value="2">D</option>
+                         <option value="1">E</option>
+                         <option value="0">F</option>
+                     </select> <br>
+             
+                     <select name="" class="select" id="select7">
+                         <option value="5">A</option>
+                         <option value="4">B</option>
+                         <option value="3">C</option>
+                         <option value="2">D</option>
+                         <option value="1">E</option>
+                         <option value="0">F</option>
+                     </select> <br>
+                     <select name="" class="select" id="select8">
+                         <option value="5">A</option>
+                         <option value="4">B</option>
+                         <option value="3">C</option>
+                         <option value="2">D</option>
+                         <option value="1">E</option>
+                         <option value="0">F</option>
+                     </select> <br>
+
+                     <select name="" class="select add" id="select9">
+                         <option value="5">A</option>
+                         <option value="4">B</option>
+                         <option value="3">C</option>
+                         <option value="2">D</option>
+                         <option value="1">E</option>
+                         <option value="0">F</option>
+                     </select> <br>
+
+                     <select name="" class="select add" id="select10">
+                        <option value="5">A</option>
+                        <option value="4">B</option>
+                        <option value="3">C</option>
+                        <option value="2">D</option>
+                        <option value="1">E</option>
+                        <option value="0">F</option>
+                     </select>
+                     
+
+
+                    </div>
+                </div>  
+
+            <hr class="second-line">
+            </section>
+            <section class="end-section">  
+                <button type="button" onclick="calcResult()" class="btn-danger calculate">CALCULATE CGPA</button>
+                <div>
+                    <button class="btn addcourse" type="button" onclick="addcourse()"><img src="img\plus-square-solid.svg" alt="show"
+                    class="img-size"></button>
+                </div>
+            </section>
+            <hr>
+            <section class="result"> <!--Result section-->
+                <h3 class="cent">RESULT: <span id="resultOutcome"></span></h3> 
+            </section>
+            
+    
+            </div>
+            <div class="col-sm-4">
+                
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
