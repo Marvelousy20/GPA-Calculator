@@ -47,6 +47,9 @@ div .main-header{
     background-color: #181818;
     height: 60px;
     color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 section h3{
@@ -69,8 +72,49 @@ section h3{
     font-weight: normal;
 }
 
-#reduced-size{
-    font-size: 2rem;
+#reduce-size{
+   font-size: larger;
+}
+
+input.add, .add{
+    display: none;
+}
+
+ol {
+    margin-left: 20px;
+}
+
+ol li{
+    padding: 5px 0;
+}
+
+
+@media screen and (max-width: 1024px) {
+    div .all {
+        background-color: #fdfff5;
+        border: none;
+        width: 100vw;
+        
+    }
+    
+}
+
+
+@media screen and (min-width: 768px) {
+    div .all {
+        border: none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+    
+}
+
+@media (min-width:768px) and (max-width: 770px) {
+    div .all {
+        background: none;
+    }
 }
 
 /*.cent{

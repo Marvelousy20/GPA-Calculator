@@ -31,12 +31,21 @@ function calcResult(){
     let val8 = h.options[h.selectedIndex].value ;
     console.log(val8) ;
 
+    // add courses id starts here
+    let i = document.getElementById('same3') ;
+    let val9 = i.options[i.selectedIndex].value ;
+    console.log(val9) ;
+
+    let j = document.getElementById('same6') ;
+    let val10 = j.options[j.selectedIndex].value ; 
+    console.log(val10) ; // add courses id for grades end here
+    
     let myArray = [] ;
     
-    myArray.push(val,val2,val3,val4,val5,val6,val7,val8) ;
+    myArray.push(val,val2,val3,val4,val5,val6,val7,val8,val9,val10) ;
     console.log(myArray) ;
 
-    // To convert the array values (strings) to object
+    // To convert the array values (strings) to Numbers
     let noArray = myArray.map(x=>+x) 
     console.log(noArray) ;
 
@@ -61,9 +70,13 @@ function calcResult(){
     console.log(unit7)
     let unit8 = document.getElementById('units8').value ;
     console.log(unit8)
+    let unit9 = document.getElementById('same2').value ;
+    console.log(unit8)
+    let unit10 = document.getElementById('same5').value ;
+    console.log(unit8)
 
     let unitArray = [] ;
-    unitArray.push(unit,unit2,unit3,unit4,unit5,unit6,unit7,unit8) ;
+    unitArray.push(unit,unit2,unit3,unit4,unit5,unit6,unit7,unit8,unit9,unit10) ;
     console.log(unitArray) ;
 
     let newUnitArray = unitArray.map(x=>+x) ;
@@ -87,60 +100,67 @@ function calcResult(){
         const result = (sum/sum2) * 5  
         console.log(result) ;
 
-        let outPutResult = document.getElementById('resultOutcome').innerHTML = Math.round((result)*100) / 100;
-    }
-
-        if(selectedValue.options[selectedValue.selectedIndex].value === "4") {
-            var sum = 0;
-            for(let i =0; i<newUnitArray.length; i++) {
-                sum += newUnitArray[i] * noArray[i] ;
-            }
-            console.log(sum)
-    
-            const constNo = 5 ;
-            let sum2 = 0;
-            for(let i = 0; i<newUnitArray.length; i++) {
-                sum2 += newUnitArray[i] * constNo 
-            }
-            console.log(sum2) ;
-            
-            const result = (sum/sum2) * 4  
-            console.log(result) ;
-    
+        if(Object.is(result, NaN)) {
+            alert('Ooops! Invalid values, please check again.')
+        }
+        else {
             let outPutResult = document.getElementById('resultOutcome').innerHTML = Math.round((result)*100) / 100;
         }
+    }
 
-        else {
-
-            alert("Please select a grade scale") ;
-           // let outputResult = document.getElementById('resultOutcome').innerHTML = 'Please select a grade scale' ;
+    else if(selectedValue.options[selectedValue.selectedIndex].value === "4") {
+        var sum = 0;
+        for(let i =0; i<newUnitArray.length; i++) {
+            sum += newUnitArray[i] * noArray[i] ;
         }
-    // // Add two arrays together: This is for the students score
-    // var sum = 0;
-    // for(let i =0; i<newUnitArray.length; i++) {
-    //     sum += newUnitArray[i] * noArray[i] ;
-    // }
-    // console.log(sum)
-
-    // const constNo = 5 ;
-    // let sum2 = 0;
-    // for(let i = 0; i<newUnitArray.length; i++) {
-    //     sum2 += newUnitArray[i] * constNo 
-    // }
-    // console.log(sum2) ;
+        console.log(sum)
     
-    // const result = (sum/sum2) * 5  
-    // console.log(result) ;
+        const constNo = 5 ;
+        let sum2 = 0;
+        for(let i = 0; i<newUnitArray.length; i++) {
+            sum2 += newUnitArray[i] * constNo 
+        }
+        console.log(sum2) ;
+            
+        const result = (sum/sum2) * 4  
+        console.log(result) ;
+    
+        if (Number.isNaN(result)) {
+            alert('Ooops! Invilid values, please check again.')
+        }
 
-    // let outPutResult = document.getElementById('resultOutcome').innerHTML = Math.round((result)*100) / 100;
+        else{
+            let outPutResult = document.getElementById('resultOutcome').innerHTML = Math.round((result)*100) / 100;
+        }
+    }
+
+    else {
+        alert("Please select a grade scale") ;
+    }
 } 
 
 
 function addCourse() {
-    let vara = document.getElementsByClassName('add')
-    function display(hii, dis) {
-        for(let i = 0; i<dis.length; i++) {
-            hii[i].style['display'] = relative ;
-        }
-    }
+    let addMore = document.getElementById('same') ;
+    addMore.style.display = 'block' ;
+
+    let addMoreTwo = document.getElementById('same2') ;
+    addMoreTwo.style.display = 'block'
+
+    let addMoreThree = document.getElementById('same3') ;
+    addMoreThree.style.display = 'block'
+
+    let addMore1 = document.getElementById('same4') ;
+    addMore1.style.display = 'block' ;
+
+    let addMore2 = document.getElementById('same5') ;
+    addMore2.style.display = 'block' ;
+
+    let addMore3 = document.getElementById('same6') ;
+    addMore3.style.display = 'block' ;
+}
+
+
+function showText() {
+
 }
