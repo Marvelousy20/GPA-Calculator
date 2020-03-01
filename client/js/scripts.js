@@ -161,6 +161,3 @@ function addCourse() {
 }
 
 
-function showText() {
-
-}
