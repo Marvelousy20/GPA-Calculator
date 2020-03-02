@@ -50,6 +50,7 @@ div .main-header{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 section h3{
@@ -88,7 +89,9 @@ ol li{
     padding: 5px 0;
 }
 
-
+table {
+    margin: 10px;
+}
 @media screen and (max-width: 1024px) {
     div .all {
         background-color: #fdfff5;
