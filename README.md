@@ -12,4 +12,4 @@ deployed to heroku.
 
 ## Use the app
 
-please visit https://calculategpa.herokuapp.com
+please visit [GPACalcualtor] (https://calculategpa.herokuapp.com)
