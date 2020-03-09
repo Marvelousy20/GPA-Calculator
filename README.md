@@ -11,5 +11,5 @@ deployed to heroku.
 * Javascript
 
 ## Use the app
-please visit
-[GPACalcualtor] (https://calculategpa.herokuapp.com)
+
+[GPACalcualtor](https://calculategpa.herokuapp.com)
